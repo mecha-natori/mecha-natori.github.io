@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.footer {
+    flex: 0 1 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: hsl(0deg, 0%, 0%);
+    color: hsl(0deg, 0%, 100%);
+
+    .media {
+        flex: 0 1 auto;
+    }
+
+    .copyright {
+        flex: 0 1 auto;
+    }
+}
