@@ -10,14 +10,14 @@
         "checkJs": true,
         "composite": true,
         "declaration": true,
-        "declarationMap": true,
+        "declarationMap": false,
         "disableReferencedProjectLoad": false,
         "disableSizeLimit": true,
         "disableSolutionSearching": false,
         "disableSourceOfProjectReferenceRedirect": false,
         "downlevelIteration": false,
         "emitBOM": false,
-        "emitDecoratorMetadata": true,
+        "emitDecoratorMetadata": false,
         "emitDeclarationOnly": false,
         "esModuleInterop": true,
         "exactOptionalPropertyTypes": false,
@@ -53,8 +53,8 @@
         "module": "ESNext",
         "moduleResolution": "NodeNext",
         "newLine": "lf",
-        "noEmit": true,
-        "noEmitHelpers": true,
+        "noEmit": false,
+        "noEmitHelpers": false,
         "noEmitOnError": true,
         "noErrorTruncation": false,
         "noFallthroughCasesInSwitch": false,
@@ -70,10 +70,8 @@
         "noUncheckedIndexedAccess": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
+        "outDir": "compiled/js",
         "plugins": [
-            {
-                "name": "next"
-            },
             {
                 "name": "typescript-eslint-language-service"
             }
@@ -85,9 +83,10 @@
         "pretty": true,
         "removeComments": true,
         "resolveJsonModule": true,
+        "rootDir": "src",
         "skipDefaultLibCheck": true,
         "skipLibCheck": true,
-        "sourceMap": true,
+        "sourceMap": false,
         "strict": true,
         "strictBindCallApply": true,
         "strictFunctionTypes": true,
@@ -108,13 +107,7 @@
         "node_modules"
     ],
     "include": [
-        ".next/types/**/*.ts",
-        "app/**/*.ts",
-        "app/**/*.tsx",
-        "lib/**/*.ts",
-        "lib/**/*.tsx",
-        "next-env.d.ts",
-        "pages/**/*.ts",
-        "pages/**/*.tsx"
+        "src/**/*.ts",
+        "src/**/*.tsx"
     ]
 }

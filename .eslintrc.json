@@ -73,6 +73,7 @@
         "arrow-body-style": "error",
         "arrow-parens": "error",
         "arrow-spacing": "error",
+        "class-methods-use-this": "off",
         "curly": [
             "error",
             "multi"

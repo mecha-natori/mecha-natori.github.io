@@ -10,7 +10,7 @@
         "checkJs": true,
         "composite": true,
         "declaration": true,
-        "declarationMap": true,
+        "declarationMap": false,
         "disableReferencedProjectLoad": false,
         "disableSizeLimit": true,
         "disableSolutionSearching": false,
@@ -18,7 +18,7 @@
         "downlevelIteration": false,
         "emitBOM": false,
         "emitDeclarationOnly": false,
-        "emitDecoratorMetadata": true,
+        "emitDecoratorMetadata": false,
         "esModuleInterop": true,
         "exactOptionalPropertyTypes": false,
         "experimentalDecorators": true,
@@ -53,8 +53,8 @@
         "module": "ESNext",
         "moduleResolution": "Node",
         "newLine": "lf",
-        "noEmit": true,
-        "noEmitHelpers": true,
+        "noEmit": false,
+        "noEmitHelpers": false,
         "noEmitOnError": true,
         "noErrorTruncation": false,
         "noFallthroughCasesInSwitch": false,
@@ -70,11 +70,8 @@
         "noUncheckedIndexedAccess": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
-        "plugins": [
-            {
-                "name": "next"
-            }
-        ],
+        "outDir": "compiled/js",
+        "plugins": [],
         "preserveConstEnums": true,
         "preserveSymlinks": false,
         "preserveValueImports": false,
@@ -82,9 +79,10 @@
         "pretty": true,
         "removeComments": true,
         "resolveJsonModule": true,
+        "rootDir": "src",
         "skipDefaultLibCheck": true,
         "skipLibCheck": true,
-        "sourceMap": true,
+        "sourceMap": false,
         "strict": true,
         "strictBindCallApply": true,
         "strictFunctionTypes": true,
@@ -105,15 +103,7 @@
         "node_modules"
     ],
     "include": [
-        "app/**/*.js",
-        "app/**/*.jsx",
-        "app/components/**/*.js",
-        "app/components/**/*.jsx",
-        "app/hooks/**/*.js",
-        "app/hooks/**/*.jsx",
-        "lib/**/*.js",
-        "lib/**/*.jsx",
-        "pages/**/*.js",
-        "pages/**/*.jsx"
+        "src/**/*.js",
+        "src/**/*.jsx"
     ]
 }

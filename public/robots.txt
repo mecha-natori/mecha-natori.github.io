@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://mecha-natori.github.io
-
-# Sitemaps
-Sitemap: https://mecha-natori.github.io/sitemap.xml
