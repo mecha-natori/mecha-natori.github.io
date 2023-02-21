@@ -46,6 +46,7 @@
         "scsslint": "^0.0.3",
         "stylelint": "^15.1.0",
         "stylelint-config-twbs-bootstrap": "^7.0.0",
+        "terser": "^5.16.4",
         "tslib": "^2.5.0",
         "typescript": "^4.9.5",
         "typescript-eslint-language-service": "^5.0.0"
@@ -60,9 +61,10 @@
         "build:scss": "run-s build:scss:sass build:scss:postcss",
         "build:scss:postcss": "postcss compiled/css --dir docs/css",
         "build:scss:sass": "sass styles/:compiled/css --no-source-map",
-        "build:ts": "run-s build:ts:tsc build:ts:babel build:ts:browserify",
+        "build:ts": "run-s build:ts:tsc build:ts:babel build:ts:browserify build:ts:teser",
         "build:ts:babel": "babel compiled/js --out-dir docs/js",
         "build:ts:browserify": "browserify docs/js/* docs/js/pages/* -o docs/js/index.bundle.js",
+        "build:ts:teser": "terser --compress --mangle --output docs/js/index.bundle.min.js -- docs/js/index.bundle.js",
         "build:ts:tsc": "tsc -b",
         "clean": "rimraf .tsbuildinfo compiled/css/* compiled/js/* docs/css/* docs/js/*"
     },
