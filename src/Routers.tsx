@@ -1,9 +1,7 @@
 'use strict';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Index } from './pages';
-import { One } from './pages/1';
-import { Zero } from './pages/0';
+import { Index, One, Zero } from './pages';
 import type { FC } from 'react';
 
 type Heads = {

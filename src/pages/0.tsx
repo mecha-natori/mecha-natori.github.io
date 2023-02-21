@@ -1,6 +1,6 @@
 'use strict';
 
-import { Main } from '../components/Main';
+import { Main } from '../components';
 import { NavigateFunction, useNavigate } from 'react-router';
 import type { Page } from '../types';
 

@@ -1,6 +1,6 @@
 'use strict';
 
-import { Main } from '../components/Main';
+import { Main } from '../components';
 import type { Page } from '../types';
 
 export const One: Page = ({ description, title }) => {

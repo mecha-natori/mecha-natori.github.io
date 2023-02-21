@@ -1,10 +1,12 @@
 'use strict';
 
-import { Main } from '../components/Main';
+import { Main } from '../components';
 import { NavigateFunction, useNavigate } from 'react-router';
+import { One } from './1';
+import { Zero } from './0';
 import type { Page } from '../types';
 
-export const Index: Page = ({ description, title }) => {
+const Index: Page = ({ description, title }) => {
     const navigate: NavigateFunction = useNavigate();
     return (
         <Main description={description} title={title}>
@@ -14,3 +16,5 @@ export const Index: Page = ({ description, title }) => {
         </Main>
     );
 }
+
+export { Index, One, Zero };
