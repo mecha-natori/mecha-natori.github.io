@@ -51,7 +51,7 @@
         "typescript-eslint-language-service": "5.0.0"
     },
     "engines": {
-        "node": ">=19"
+        "node": ">=19.6.1"
     },
     "name": "mecha-natori.github.io",
     "private": true,
