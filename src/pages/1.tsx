@@ -2,9 +2,14 @@
 
 import { Main } from '../Main';
 
-export function One(): JSX.Element {
+type Props = {
+    description?: string,
+    title?: string
+};
+
+export function One({ description, title }: Props): JSX.Element {
     return (
-        <Main title="1ページ目">
+        <Main description={description} title={title}>
             <p>1ページ目です。</p>
         </Main>
     );

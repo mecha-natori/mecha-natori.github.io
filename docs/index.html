@@ -15,13 +15,19 @@
         <meta name="viewport" content="width=device-width,initialize-scale=1" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@snct_lab" />
-        <meta name="description" content="メカトロニクス研究部会のホームページです。" />
         <title>メカトロニクス研究部会</title>
+        <script>
+            'use strict';
+            const query = location.search;
+            if(query.startsWith('?p=')) history.replaceState(null, null, decodeURIComponent(query.slice(3)));
+        </script>
     </head>
-    <body class="body">
+    <body>
+        <div id="root" class="body"></div>
         <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
         <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
         <script src="https://unpkg.com/react-router-dom@6/dist/umd/react-router-dom.production.min.js" crossorigin></script>
+        <script src="https://cdn.jsdelivr.net/npm/react-helmet@6/lib/Helmet.min.js" crossorigin></script>
         <script src="/js/index.bundle.js"></script>
     </body>
 </html>
