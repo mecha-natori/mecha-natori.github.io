@@ -1,13 +1,9 @@
 'use strict';
 
-import { Main } from '../Main';
+import { Main } from '../components/Main';
+import type { Page } from '../types';
 
-type Props = {
-    description?: string,
-    title?: string
-};
-
-export function One({ description, title }: Props): JSX.Element {
+export const One: Page = ({ description, title }) => {
     return (
         <Main description={description} title={title}>
             <p>1ページ目です。</p>

@@ -1,14 +1,10 @@
 'use strict';
 
-import { Main } from '../Main';
+import { Main } from '../components/Main';
 import { NavigateFunction, useNavigate } from 'react-router';
+import type { Page } from '../types';
 
-type Props = {
-    description?: string,
-    title?: string
-};
-
-export function Index({ description, title }: Props): JSX.Element {
+export const Index: Page = ({ description, title }) => {
     const navigate: NavigateFunction = useNavigate();
     return (
         <Main description={description} title={title}>

@@ -1,15 +1,10 @@
 'use strict';
 
-import { Main } from '../Main';
-import { useNavigate } from 'react-router';
-import type { NavigateFunction } from 'react-router';
+import { Main } from '../components/Main';
+import { NavigateFunction, useNavigate } from 'react-router';
+import type { Page } from '../types';
 
-type Props = {
-    description?: string,
-    title?: string
-};
-
-export function Zero({ description, title }: Props): JSX.Element {
+export const Zero: Page = ({ description, title }) => {
     const navigate: NavigateFunction = useNavigate();
     return (
         <Main description={description} title={title}>

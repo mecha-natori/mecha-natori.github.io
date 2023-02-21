@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Index } from './pages';
 import { One } from './pages/1';
 import { Zero } from './pages/0';
+import type { FC } from 'react';
 
 type Heads = {
     [page: string]: {
@@ -12,7 +13,7 @@ type Heads = {
     }
 };
 
-export function Routers(): JSX.Element {
+export const Routers: FC = () => {
     const root: string = process.env['PUBLIC_URL'] ?? '';
     const head: Heads = {
         index: {
