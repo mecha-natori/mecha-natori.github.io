@@ -30,7 +30,7 @@ jobs:
         with:
           cache: 'yarn'
           cache-dependency-path: yarn.lock
-          node-version: '19.x'
+          node-version: '19.6.1'
       - name: Install package
         run: yarn install --frozen-lockfile
       - name: Build
