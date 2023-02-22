@@ -18,5 +18,10 @@
     <orderEntry type="library" name="babel-standalone" level="application" />
     <orderEntry type="library" name="react-router-dom" level="application" />
     <orderEntry type="library" name="react-helmet" level="application" />
+    <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="bootstrap-icons" level="application" />
+    <orderEntry type="library" name="react-router-dom" level="application" />
+    <orderEntry type="library" name="react-helmet" level="application" />
+    <orderEntry type="library" name="react-helmet-async" level="application" />
   </component>
 </module>

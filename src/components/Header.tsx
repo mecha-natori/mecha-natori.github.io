@@ -1,7 +1,7 @@
 'use strict';
 
-import type { FC } from 'react';
-
-export const Header: FC = () => (
-    <header className="header" />
-);
+export function Header(): JSX.Element {
+    return (
+        <header className="header" />
+    );
+}

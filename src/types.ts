@@ -1,5 +1,8 @@
 'use strict';
 
-import type { FC } from 'react';
+import type { PropsWithChildren } from 'react';
 
-export type Page = FC<{ description?: string, title?: string }>;
+export type PageProps = PropsWithChildren<{
+    description: string,
+    title: string
+}>;

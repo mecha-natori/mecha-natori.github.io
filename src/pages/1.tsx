@@ -1,11 +1,10 @@
 'use strict';
 
 import { Main } from '../components';
-import type { Page } from '../types';
 
-export const One: Page = ({ description, title }) => {
+export function One(): JSX.Element {
     return (
-        <Main description={description} title={title}>
+        <Main description="1ページ目です。" title="1">
             <p>1ページ目です。</p>
         </Main>
     );

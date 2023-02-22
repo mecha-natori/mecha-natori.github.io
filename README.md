@@ -4,12 +4,12 @@
 
 ## 概要
 ### 動作環境
-- [React 18.2.0](https://unpkg.com/browse/react@18.2.0/umd/react.development.js)
-  - [ReactDOM 18.2.0](https://unpkg.com/browse/react-dom@18.2.0/umd/react-dom.development.js)
-  - [Helmet 6.1.0](https://cdn.jsdelivr.net/npm/react-helmet@6.1.0/lib/Helmet.js)
-  - [RouterDOM 6.8.1](https://unpkg.com/browse/react-router-dom@6.8.1/dist/umd/react-router-dom.development.js)
-- Bootstrap 5.2.3 ([CSS](https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.css)・[JS](https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.js))
-  - [Bootstrap Icons 1.10.3](https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css)
+- [React 18.2.0](https://unpkg.com/browse/react@18.2.0)
+  - [ReactDOM 18.2.0](https://unpkg.com/browse/react-dom@18.2.0)
+  - [Helmet-async 1.3.0](https://cdn.jsdelivr.net/npm/react-helmet-async@1.3.0/)
+  - [RouterDOM 6.8.1](https://unpkg.com/browse/react-router-dom@6.8.1)
+- Bootstrap 5.2.3 ([CSS](https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/)・[JS](https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/))
+  - [Bootstrap Icons 1.10.3](https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/)
 ### ビルド環境
 - [Node.js 19.6.1](https://nodejs.org/ja)
 - [Babel 7.21.0](https://www.npmjs.com/package/babel/v/7.21.0)
@@ -51,3 +51,9 @@ flowchart TD
     A(SCSS) -- sass ---> B(CSS) -- postcss ---> C(Production CSS)
     D(TS & TS with JSX) -- tsc --> E(JS & JS with JSX) -- babel --> F(JS) -- browserify --> G(Bundled JS) -- terser --> H(Production JS)
 ```
+
+## 業務連絡
+### ページ追加方法
+1. `/src/pages`配下にページコンポーネントを作成
+2. `/src/pages/index.tsx`でexportさせる
+3. `/src/App.tsx`にルーティングを追加する
