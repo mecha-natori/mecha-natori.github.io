@@ -1,11 +1,11 @@
 'use strict';
 
-import ReactDOM, { Root } from 'react-dom/client';
 import { App } from './App';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Root, createRoot } from 'react-dom/client';
 import { StrictMode } from 'react';
 
-const root: Root = ReactDOM.createRoot(document.getElementById('root')!);
+const root: Root = createRoot(document.getElementById('root')!);
 root.render(
     <StrictMode>
         <HelmetProvider>
