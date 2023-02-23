@@ -6,8 +6,6 @@ on:
   push:
     branches:
       - master
-  schedule:
-    - cron: '0 0 * * *'
   workflow_dispatch:
 permissions:
   contents: read
@@ -33,6 +31,13 @@ jobs:
           node-version: 19.6.1
       - name: Install package
         run: yarn install --frozen-lockfile
+      - name: Patch eslint-config-eslint
+        run: |
+          cd node_modules/eslint-config-eslint
+          rm default.yml
+          wget https://raw.githubusercontent.com/eslint/eslint/main/packages/eslint-config-eslint/default.yml
+      - name: Lint
+        run: yarn lint
       - name: Build
         run: yarn build
       - name: Add .nojekyll
