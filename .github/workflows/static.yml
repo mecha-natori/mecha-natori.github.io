@@ -29,17 +29,8 @@ jobs:
           cache: yarn
           cache-dependency-path: yarn.lock
           node-version: 19.x
-      - name: Install package
-        run: yarn install --frozen-lockfile
-      - name: Patch eslint-config-eslint
-        run: |
-          cd node_modules/eslint-config-eslint
-          rm default.yml
-          wget https://raw.githubusercontent.com/eslint/eslint/main/packages/eslint-config-eslint/default.yml
-      - name: Lint
-        run: yarn lint
       - name: Build
-        run: yarn build
+        run: ./build.sh
       - name: Add .nojekyll
         run: touch ./docs/.nojekyll
       - name: Setup Pages
