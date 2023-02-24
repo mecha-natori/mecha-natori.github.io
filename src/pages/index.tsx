@@ -2,7 +2,7 @@
 
 import { Main } from '../components';
 
-function Index(): JSX.Element {
+export default function Index(): JSX.Element {
     return (
         <Main description="メカトロニクス研究部会のホームページです。" title="Top">
             <p>仙台高専名取キャンパスに籍を置くメカトロニクス研究部会のホームページです。</p>
@@ -35,5 +35,3 @@ function Index(): JSX.Element {
         </Main>
     );
 }
-
-export { Index };

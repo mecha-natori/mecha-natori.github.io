@@ -1,5 +1,47 @@
 @charset "UTF-8";
-@forward "base";
-@forward "layout";
-@forward "footer";
-@forward "header";
+
+$light-link-color: hsl(225deg, 100%, 60%);
+$light-link-hover-color: hsl(244deg, 57%, 52%);
+
+:root {
+    --link-color: #{$light-link-color};
+    --link-hover-color: #{$light-link-hover-color};
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+code, pre {
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color .1s linear;
+}
+
+a:active, a:focus, a:hover {
+    color: var(--link-hover-color);
+}
+
+abbr {
+    &, &[title] {
+        cursor: inherit;
+        text-decoration: none;
+    }
+}
+
+.react-root {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-height: 100svh;
+}

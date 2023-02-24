@@ -1,6 +1,6 @@
 'use strict';
 
-import { App } from './App';
+import App from './App';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Root, createRoot } from 'react-dom/client';
 import { StrictMode } from 'react';

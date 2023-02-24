@@ -1,11 +1,11 @@
 'use strict';
 
-import { Footer } from './Footer';
-import { Header } from './Header';
+import { Footer } from '.';
+import { Header } from '.';
 import { Helmet } from 'react-helmet-async';
 import type { PageProps } from '../types';
 
-export function Main({ children, description, title }: PageProps): JSX.Element {
+export default function Main({ children, description, title }: PageProps): JSX.Element {
     return (
         <>
             <Helmet>
@@ -13,11 +13,18 @@ export function Main({ children, description, title }: PageProps): JSX.Element {
                 <title>{`${title} - メカトロニクス研究部会`}</title>
             </Helmet>
             <Header />
-            <main className="main">
+            <main>
                 <h1 className="title">{title}</h1>
                 {children}
             </main>
             <Footer />
+            <style jsx>{`
+                main {
+                    flex: 1 1 auto;
+                    margin: 0;
+                    padding: 2rem;
+                }
+            `}</style>
         </>
     );
 }
