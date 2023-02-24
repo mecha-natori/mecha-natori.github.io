@@ -1,17 +1,25 @@
 'use strict';
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Index, One, Zero } from './pages';
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import { Index } from './pages';
+import { Main } from './components';
 
 export function App(): JSX.Element {
     const root: string = process.env['PUBLIC_URL'] ?? '';
     return (
         <BrowserRouter>
             <Routes>
-                <Route path={`${root}/`} element={<Index />} />
-                <Route path={`${root}/0`} element={<Zero />} />
-                <Route path={`${root}/1`} element={<One />} />
+                <Route exact path={`${root}/`} element={<Index />} />
+                <Route element={<NotFound />} />
             </Routes>
         </BrowserRouter>
+    );
+}
+
+function NotFound(): JSX.Element {
+    return (
+        <Main description="" title="404">
+            <p><Link to="/">トップに戻る</Link></p>
+        </Main>
     );
 }
