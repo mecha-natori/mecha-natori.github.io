@@ -5,8 +5,10 @@ import { Main } from '../components';
 export default function Index(): JSX.Element {
     return (
         <Main description="メカトロニクス研究部会のホームページです。" title="Top">
-            <p>仙台高専名取キャンパスに籍を置くメカトロニクス研究部会のホームページです。</p>
-            <p>主に新人向けの講習資料の公開を行っています。</p>
+            <p>
+                仙台高専名取キャンパスに籍を置くメカトロニクス研究部会のホームページです。<wbr />
+                主に新人向けの講習資料の公開を行っています。
+            </p>
             <ul>
                 <li>
                     <p>制御向け</p>
