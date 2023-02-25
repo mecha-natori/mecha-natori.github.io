@@ -254,18 +254,9 @@ const config = [
             pluginTypeScript
         ],
         settings: {
-            'import/parsers': {
-                '@typescript-eslint/parser': [
-                    '.ts',
-                    '.tsx'
-                ]
-            },
-            'import/resolver': {
-                typescript: {
-                    alwaysTryTypes: true,
-                    project: './tsconfig.json'
-                }
-            },
+            'import/core-modules': [
+                'styled-jsx/css'
+            ],
             propWrapperFunctions: [
                 'forbidExtraProps',
                 {
@@ -315,6 +306,20 @@ const config = [
         rules: {
             ...jsRules,
             ...tsRules
+        },
+        settings: {
+            'import/parsers': {
+                '@typescript-eslint/parser': [
+                    '.ts',
+                    '.tsx'
+                ]
+            },
+            'import/resolver': {
+                typescript: {
+                    alwaysTryTypes: true,
+                    project: './tsconfig.json'
+                }
+            }
         }
     }
 ];

@@ -19,25 +19,25 @@ export default function Footer(): JSX.Element {
                     color: hsl(0deg, 0%, 100%);
                     margin: 0;
                     padding: 0.5rem 1rem;
-                }
 
-                .footer-media {
-                    flex: 0 1 auto;
-                    font-size: 2.5rem;
-                    line-height: 1;
-                }
+                    .footer-media {
+                        flex: 0 1 auto;
+                        font-size: 2.5rem;
+                        line-height: 1;
 
-                .bi-twitter {
-                    color: hsl(208deg, 84%, 57%);
-                    transition: color .25s linear;
-                }
+                        .bi-twitter {
+                            color: hsl(208deg, 84%, 57%);
+                            transition: color .25s linear;
 
-                .bi-twitter:active, .bi-twitter:focus, .bi-twitter:hover {
-                    color: hsl(0deg, 0%, 100%);
-                }
+                            &:active, &:focus, &:hover {
+                                color: hsl(0deg, 0%, 100%);
+                            }
+                        }
+                    }
 
-                .footer-copyright {
-                    flex: 0 1 auto;
+                    .footer-copyright {
+                        flex: 0 1 auto;
+                    }
                 }
             `}</style>
         </footer>
