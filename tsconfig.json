@@ -103,11 +103,15 @@
         "watch": true
     },
     "exclude": [
-        "**/node_modules/*",
+        "**/node_modules",
+        "compiled",
+        "docs",
+        "eslint.config.js",
+        "eslint.config.mjs",
         "node_modules"
     ],
     "include": [
-        "src/**/*.ts",
-        "src/**/*.tsx"
+        "**/*.ts",
+        "**/*.tsx"
     ]
 }
