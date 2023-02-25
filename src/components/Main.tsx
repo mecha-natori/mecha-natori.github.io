@@ -14,15 +14,21 @@ export default function Main({ children, description, title }: PageProps): JSX.E
             </Helmet>
             <Header />
             <main>
-                <h1 className="title">{title}</h1>
-                {children}
+                <div>
+                    <h1 className="title">{title}</h1>
+                    {children}
+                </div>
             </main>
             <Footer />
             <style jsx>{`
                 main {
                     flex: 1 1 auto;
+                    display: flex;
                     margin: 0;
                     padding: 2rem;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: center;
                 }
             `}</style>
         </>
