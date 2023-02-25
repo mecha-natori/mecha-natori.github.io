@@ -17,7 +17,7 @@
         "disableSourceOfProjectReferenceRedirect": false,
         "downlevelIteration": false,
         "emitBOM": false,
-        "emitDecoratorMetadata": false,
+        "emitDecoratorMetadata": true,
         "emitDeclarationOnly": false,
         "esModuleInterop": true,
         "exactOptionalPropertyTypes": false,
