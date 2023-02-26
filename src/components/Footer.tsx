@@ -5,6 +5,7 @@ export default function Footer(): JSX.Element {
         <footer>
             <div className="footer-media">
                 <a href="https://twitter.com/snct_lab/" title="Twitter: @snct_lab"><i className="bi bi-twitter" /></a>
+                <a href="mailto:snct.mechatronics.natori@gmail.com" title="Mail: snct.mechatronics.natori@gmail.com"><i className="bi bi-envelope-fill" /></a>
             </div>
             <div className="footer-copyright">
                 <small>Copyright &copy; 2023 SNCT Natori Mechatronics Lab. All rights reserved.</small>
@@ -24,9 +25,19 @@ export default function Footer(): JSX.Element {
                         flex: 0 1 auto;
                         font-size: 2.5rem;
                         line-height: 1;
+                        letter-spacing: 0.5rem;
 
                         .bi-twitter {
                             color: hsl(208deg, 84%, 57%);
+                            transition: color .25s linear;
+
+                            &:active, &:focus, &:hover {
+                                color: hsl(0deg, 0%, 100%);
+                            }
+                        }
+
+                        .bi-envelope-fill {
+                            color: hsl(120deg, 50%, 40%);
                             transition: color .25s linear;
 
                             &:active, &:focus, &:hover {
