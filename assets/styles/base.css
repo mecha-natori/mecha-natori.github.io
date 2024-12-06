@@ -2,11 +2,11 @@
 
 a {
     color: inherit;
-    text-decoration: none;
+    text-decoration-style: dotted;
     transition: text-decoration ease 0.3s;
 
     &:is(:active, :focus, :hover) {
-        text-decoration: underline;
+        text-decoration-style: solid;
     }
 }
 

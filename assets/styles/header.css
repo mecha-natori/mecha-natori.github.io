@@ -36,13 +36,13 @@ header {
         font-size: var(--header-navigation-text-size);
         height: var(--header-navigation-height);
         text-align: center;
+        text-decoration: none;
         transition: background-color ease 0.3s, color ease 0.3s;
         width: var(--header-navigation-width);
 
         &:is(:active, :focus, :hover) {
             background-color: var(--header-navigation-hover-bg-color);
             color: var(--header-navigation-hover-text-color);
-            text-decoration: none;
         }
     }
 }
