@@ -3,7 +3,7 @@
 main {
     background-color: var(--page-bg-color);
     color: var(--page-text-color);
-    padding: 1rem 5rem;
+    padding: 1rem 5rem 5rem;
 }
 
 /* vim: set et sts=4 sw=4 : */

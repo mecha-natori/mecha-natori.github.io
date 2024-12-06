@@ -2,6 +2,8 @@
 
 /* colors */
 :root {
+    --code-bg-color: #222;
+    --code-text-color: #eee;
     --footer-bg-color: #333;
     --footer-text-color: #ddd;
     --header-bg-color: #333;
@@ -10,6 +12,10 @@
     --header-text-color: #ddd;
     --page-bg-color: #555;
     --page-text-color: #eee;
+    --table-body-bg-color: #444;
+    --table-body-text-color: #eee;
+    --table-head-bg-color: #333;
+    --table-head-text-color: #eee;
     @media (prefers-color-scheme: light) {
         --footer-bg-color: #aaa;
         --footer-text-color: #111;
@@ -19,6 +25,10 @@
         --header-text-color: #111;
         --page-bg-color: #eee;
         --page-text-color: #111;
+        --table-body-bg-color: #ddd;
+        --table-body-text-color: #111;
+        --table-head-bg-color: #ccc;
+        --table-head-text-color: #111;
     }
 }
 
