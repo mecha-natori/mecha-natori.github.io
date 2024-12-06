@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* colors */
+:root {
+    --footer-bg-color: #333;
+    --footer-text-color: #ddd;
+    --header-bg-color: #333;
+    --header-navigation-hover-bg-color: #555;
+    --header-navigation-hover-text-color: #eee;
+    --header-text-color: #ddd;
+    --page-bg-color: #555;
+    --page-text-color: #eee;
+    @media (prefers-color-scheme: light) {
+        --footer-bg-color: #aaa;
+        --footer-text-color: #111;
+        --header-bg-color: #ccc;
+        --header-navigation-hover-bg-color: #aaa;
+        --header-navigation-hover-text-color: #111;
+        --header-text-color: #111;
+        --page-bg-color: #eee;
+        --page-text-color: #111;
+    }
+}
+
+/* element sizes */
+:root {
+    --header-navigation-height: 3.5rem;
+    --header-navigation-width: 5.5rem;
+}
+
+/* text sizes */
+:root {
+    --footer-copyright-text-size: 1rem;
+    --header-navigation-text-size: 2rem;
+    --header-title-name-text-size: 2.25rem;
+    --text-size: 1.25rem;
+}
+
+/* vim: set et sts=4 sw=4 : */

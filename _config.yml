@@ -1,0 +1,7 @@
+kramdown:
+  input: GFM
+  gfm_quirks:
+    - paragraph_end
+markdown: kramdown
+sass:
+  style: compressed

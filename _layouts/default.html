@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+        <link href="{{ '/assets/style.css' | relative_url }}" rel="stylesheet" />
+        <title>{{ page.title }} - メカトロニクス研究部会</title>
+    </head>
+    <body>
+        <header>
+            <div class="header-title">
+                <span class="header-title-name">メカトロニクス研究部会</span>
+            </div>
+            <div class="header-navigation">
+                <div class="header-navigation-item">
+                    <a href="{{ '/lessons' | relative_url }}">講習</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            {{ content }}
+        </main>
+        <footer>
+            <div class="footer-copyright-container">
+                <span class="footer-copyright">
+                    Copyright © 2024 SNCT Natori Mechatronics Lab. All rights reserved.
+                </span>
+            </div>
+        </footer>
+    </body>
+</html>

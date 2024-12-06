@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+@import "styles/variables.css";
+@import "styles/base.css";
+@import "styles/header.css";
+@import "styles/footer.css";
+@import "styles/page.css";
+
+/* vim: set et sts=4 sw=4 : */

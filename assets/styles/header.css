@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+header {
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+    display: block flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+    width: 100dvw;
+}
+
+.header-title {
+    display: block flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.header-title-name {
+    font-size: var(--header-title-name-text-size);
+    font-weight: bold;
+}
+
+.header-navigation {
+    display: block flex;
+    flex: 1 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-inline: 2rem;
+
+    a {
+        align-content: center;
+        border-radius: 0.5rem;
+        display: block flow;
+        font-size: var(--header-navigation-text-size);
+        height: var(--header-navigation-height);
+        text-align: center;
+        transition: background-color ease 0.3s, color ease 0.3s;
+        width: var(--header-navigation-width);
+
+        &:is(:active, :focus, :hover) {
+            background-color: var(--header-navigation-hover-bg-color);
+            color: var(--header-navigation-hover-text-color);
+            text-decoration: none;
+        }
+    }
+}
+
+.header-navigation-item {
+    align-items: center;
+    display: block flex;
+}
+
+/* vim: set et sts=4 sw=4 : */
