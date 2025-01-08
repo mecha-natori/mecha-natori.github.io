@@ -1,7 +1,22 @@
+host: "0.0.0.0"
 kramdown:
-  input: GFM
+  gfm_emojis: true
   gfm_quirks:
-    - paragraph_end
-markdown: kramdown
+    - "paragraph_end"
+  input: "GFM"
+markdown: "kramdown"
+plugins:
+  - "jekyll-seo-tag"
+port: 8080
 sass:
-  style: compressed
+  style: "compressed"
+site_title: "メカトロニクス研究部会"
+social:
+  links:
+    - "https://github.com/mecha-natori"
+    - "https://twitter.com/snct_lab"
+  name: "メカトロニクス研究部会"
+title: "メカトロニクス研究部会"
+twitter:
+  card: "summary"
+  username: "snct_lab"

@@ -1,31 +1,37 @@
 <!DOCTYPE html>
-<html lang="ja">
+<!--suppress HtmlRequiredTitleElement -->
+<html
+    lang="ja"
+    prefix="article: https://ogp.me/ns/article# og: https://ogp.me/ns#"
+>
     <head>
-        <meta charset="UTF-8" />
-        <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
-        <link href="{{ '/assets/style.css' | relative_url }}" rel="stylesheet" />
-        <title>{{ page.title }} - メカトロニクス研究部会</title>
+        {% include metadata.html %}
+        {% seo page_locale = "ja_JP" %}
     </head>
     <body>
-        <header>
-            <div class="header-title">
-                <span class="header-title-name">メカトロニクス研究部会</span>
-            </div>
-            <div class="header-navigation">
-                <div class="header-navigation-item">
-                    <a href="{{ '/lessons' | relative_url }}">講習</a>
-                </div>
-            </div>
-        </header>
+        {% include header.html %}
         <main>
+            <h1>{{ page.title-short }}</h1>
+            {% if page.date and page.modified %}
+                <div class="page-date-container">
+                    <div
+                        class="page-created-date"
+                        title="作成日"
+                    >
+                        <span class="material-symbols-outlined">note_add</span>
+                        {{ page.date }}
+                    </div>
+                    <div
+                        class="page-modified-date"
+                        title="最終更新日"
+                    >
+                        <span class="material-symbols-outlined">update</span>
+                        {{ page.modified }}
+                    </div>
+                </div>
+            {% endif %}
             {{ content }}
         </main>
-        <footer>
-            <div class="footer-copyright-container">
-                <span class="footer-copyright">
-                    Copyright © 2024 SNCT Natori Mechatronics Lab. All rights reserved.
-                </span>
-            </div>
-        </footer>
+        {% include footer.html %}
     </body>
 </html>

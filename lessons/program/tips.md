@@ -1,10 +1,12 @@
 ---
-layout: default
-title: Tips - 制御講習
+author: "Sora Tonami"
+date: "2024/12/06"
+description: "制御に関したりしなかったりするtipsを書き殴ってるページです。"
+layout: "default"
+modified: "2024/12/06"
+title: "Tips \\| 制御講習"
+title-short: "Tips"
 ---
-
-Tips
-====
 
 制御に関したりしなかったりするtipsを書き殴ってるページです。
 

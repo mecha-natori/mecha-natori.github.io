@@ -2,8 +2,11 @@
 
 /* colors */
 :root {
+    --border-color: #eee;
     --code-bg-color: #222;
     --code-text-color: #eee;
+    --details-bg-color: #666;
+    --details-text-color: #eee;
     --footer-bg-color: #333;
     --footer-text-color: #ddd;
     --header-bg-color: #333;
@@ -17,6 +20,9 @@
     --table-head-bg-color: #333;
     --table-head-text-color: #eee;
     @media (prefers-color-scheme: light) {
+        --border-color: #111;
+        --details-bg-color: #ddd;
+        --details-text-color: #111;
         --footer-bg-color: #aaa;
         --footer-text-color: #111;
         --header-bg-color: #ccc;
@@ -38,12 +44,34 @@
     --header-navigation-width: 5.5rem;
 }
 
+/* fonts */
+:root {
+    --font-mono: "Noto Sans Mono", "Source Code Pro", ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Fira Mono", "Droid Sans Mono", "Courier New";
+    --font-sans: "Noto Sans JP", "Noto Sans CJK JP", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo;
+}
+
+/* paddings */
+:root {
+    --footer-padding: 0.25rem 0.5rem;
+    --page-padding: 1rem 2rem 2rem;
+    @media (768px <= width) {
+        --footer-padding: 0.5rem 1rem;
+        --page-padding: 1rem 5rem 5rem;
+    }
+}
+
 /* text sizes */
 :root {
-    --footer-copyright-text-size: 1rem;
-    --header-navigation-text-size: 2rem;
-    --header-title-name-text-size: 2.25rem;
+    --footer-copyright-text-size: 0.75rem;
+    --header-navigation-text-size: 1.5rem;
+    --header-title-name-text-size: 1.5rem;
     --text-size: 1.25rem;
+    @media (768px <= width) {
+        --footer-copyright-text-size: 1rem;
+        --header-navigation-text-size: 2rem;
+        --header-title-name-text-size: 2.25rem;
+        --text-size: 1.25rem;
+    }
 }
 
 /* vim: set et sts=4 sw=4 : */
