@@ -4,9 +4,13 @@ header {
     background-color: var(--header-bg-color);
     color: var(--header-text-color);
     display: block flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    padding: 1rem;
+    padding: 1rem 1rem 0;
+    @media (768px <= width) {
+        flex-direction: row;
+        padding-bottom: 1rem;
+    }
 }
 
 .header-title {
@@ -14,6 +18,10 @@ header {
     flex: 0 0 auto;
     flex-direction: row;
     flex-wrap: nowrap;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 .header-title-name {
@@ -27,7 +35,9 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
-    padding-inline: 2rem;
+    @media (768px <= width) {
+        padding-inline: 2rem;
+    }
 
     a {
         align-content: center;

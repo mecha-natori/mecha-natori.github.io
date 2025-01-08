@@ -6,7 +6,7 @@ footer {
     display: block flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    padding: 0.5rem 1rem;
+    padding: var(--footer-padding);
 }
 
 .footer-copyright-container {
