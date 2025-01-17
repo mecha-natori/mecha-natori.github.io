@@ -17,6 +17,9 @@
               bundler
               ruby
             ];
+            shellHook = ''
+              bundle install
+            '';
           };
         };
       systems = [
