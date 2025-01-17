@@ -61,7 +61,7 @@ title-short: "制御講習"
 チーム開発やGitの使い方について学びます。
 
 1. Gitの使い方基本編(WIP)
-2. GitHubを使い始める(WIP)
+2. [GitHubを使い始める](github)
 3. Gitの使い方チーム開発編(WIP)
 
 ## おまけ
