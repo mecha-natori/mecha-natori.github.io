@@ -8,7 +8,7 @@ modified: "2025/01/17"
 tags:
   - "Git"
   - "GitHub"
-title: "GitHubを使い始める \\| 制御講習"
+title: "GitHubを使い始める \\| チーム開発・Git入門 \\| 制御講習"
 title-short: "GitHubを使い始める"
 ---
 

@@ -10,7 +10,7 @@ tags:
   - "STM32Cube"
   - "STM32CubeMX"
   - "組み込み開発"
-title: "STM32CubeMX \\| 制御講習"
+title: "STM32CubeMX \\| 制御班入門 \\| 制御講習"
 title-short: "STM32CubeMX"
 ---
 
