@@ -19,8 +19,8 @@ title-short: "制御講習"
 
 ### 序章 はじめに
 
-1. [心構え](intro)
-2. [準備](prepare)
+1. [心構え](intro/intro)
+2. [準備](intro/prepare)
 
 ### 1章 基本的なツールの使い方
 
@@ -28,7 +28,7 @@ title-short: "制御講習"
 
 ### 2章 STM32での開発
 
-1. [STM32CubeMXの使い方](cube-mx)
+1. [STM32CubeMXの使い方](intro/cube-mx)
 2. STM32のプログラムの書き方(WIP)
 3. libroboの使い方STM32編(WIP)
 
@@ -61,7 +61,7 @@ title-short: "制御講習"
 チーム開発やGitの使い方について学びます。
 
 1. Gitの使い方基本編(WIP)
-2. [GitHubを使い始める](github)
+2. [GitHubを使い始める](git/github)
 3. Gitの使い方チーム開発編(WIP)
 
 ## おまけ
