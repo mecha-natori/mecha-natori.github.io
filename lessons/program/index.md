@@ -64,9 +64,16 @@ title-short: "制御講習"
 2. [GitHubを使い始める](git/github)
 3. Gitの使い方チーム開発編(WIP)
 
+## 用語集
+
+用語集です。英語も置いておくので検索に活用してね。
+
+- [プログラム編](dic/program)
+- [基板編](dic/circuit)
+- [Git編](dic/git)
+
 ## おまけ
 
 - [うまくggれない！そんな時は](ggrks)
-- [用語集](words)
 - [Tips](tips)
 - [librobo APIドキュメント](https://mecha-natori.github.io/librobo)
