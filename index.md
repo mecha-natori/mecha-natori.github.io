@@ -1,9 +1,9 @@
 ---
-author: "Sora Tonami"
-description: "メカトロニクス研究部会とは、仙台高専名取キャンパスに籍を置く研究部会です。"
-layout: "default"
-title: "Top"
-title-short: "メカトロニクス研究部会"
+author: Sora Tonami
+description: メカトロニクス研究部会とは、仙台高専名取キャンパスに籍を置く研究部会です。
+layout: default
+title: Top
+title-short: メカトロニクス研究部会
 ---
 
 メカトロニクス研究部会とは、仙台高専名取キャンパスに籍を置く研究部会です。
