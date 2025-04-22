@@ -2,6 +2,8 @@
 .bundle/
 .jekyll-cache/
 .jekyll-metadata
+.pre-commit-config.yaml
 .sass-cache/
 _site/
+result*
 vendor/

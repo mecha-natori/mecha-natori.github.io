@@ -1,18 +1,18 @@
 ---
-author: "Sora Tonami"
-description: "制御講習です。"
-layout: "default"
-title: "制御講習"
-title-short: "制御講習"
+author: Sora Tonami
+description: 制御講習です。
+layout: default
+title: 制御講習
+title-short: 制御講習
 ---
 
 制御講習です。(WIP)
 
-- [制御班入門](#制御班入門)
-- [基板間通信入門](#基板間通信入門)
-- [チーム開発・Git入門](#チーム開発git入門)
-- [用語集](#用語集)
-- [おまけ](#おまけ)
+- [制御班入門](#%E5%88%B6%E5%BE%A1%E7%8F%AD%E5%85%A5%E9%96%80)
+- [基板間通信入門](#%E5%9F%BA%E6%9D%BF%E9%96%93%E9%80%9A%E4%BF%A1%E5%85%A5%E9%96%80)
+- [チーム開発・Git入門](#%E3%83%81%E3%83%BC%E3%83%A0%E9%96%8B%E7%99%BAgit%E5%85%A5%E9%96%80)
+- [用語集](#%E7%94%A8%E8%AA%9E%E9%9B%86)
+- [おまけ](#%E3%81%8A%E3%81%BE%E3%81%91)
 
 ## 制御班入門
 
