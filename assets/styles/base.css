@@ -23,15 +23,15 @@ a {
 }
 
 code {
-    background-color: var(--code-bg-color);
-    color: var(--code-text-color);
     font-family: var(--font-mono);
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 400;
 }
 
-code:is(&:not(pre > *)) {
+code:is(:not(pre > *)) {
+    background-color: var(--code-bg-color);
+    color: var(--code-text-color);
     border-radius: 0.25rem;
     margin-inline: 0.25rem;
     padding-inline: 0.25rem;
