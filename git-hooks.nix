@@ -15,6 +15,7 @@
             editorconfig-checker = {
               enable = true;
               excludes = [
+                "assets/styles/highlight.css"
                 "flake.lock"
               ];
             };
