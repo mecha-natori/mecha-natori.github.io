@@ -24,12 +24,15 @@ a {
 
 code {
     background-color: var(--code-bg-color);
-    border-radius: 0.25rem;
     color: var(--code-text-color);
     font-family: var(--font-mono);
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 400;
+}
+
+code:is(&:not(pre > *)) {
+    border-radius: 0.25rem;
     margin-inline: 0.25rem;
     padding-inline: 0.25rem;
 }
