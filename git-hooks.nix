@@ -20,7 +20,11 @@
             };
             markdownlint = {
               enable = true;
-              settings.configuration.MD013 = false;
+              settings.configuration = {
+                MD013 = false;
+                MD024 = false;
+                MD026 = false;
+              };
             };
             treefmt = {
               enable = true;
