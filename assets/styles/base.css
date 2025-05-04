@@ -29,6 +29,10 @@ code {
     font-weight: 400;
 }
 
+pre.highlight:has(code) {
+    padding: 0.5rem 1rem;
+}
+
 code:is(:not(pre > *)) {
     background-color: var(--code-bg-color);
     color: var(--code-text-color);
