@@ -12,13 +12,6 @@
           hooks = {
             actionlint.enable = true;
             check-toml.enable = true;
-            editorconfig-checker = {
-              enable = true;
-              excludes = [
-                "assets/styles/highlight.css"
-                "flake.lock"
-              ];
-            };
             markdownlint = {
               enable = true;
               settings.configuration = {
