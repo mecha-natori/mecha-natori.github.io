@@ -35,7 +35,6 @@
             ];
             shellHook = ''
               ${config.pre-commit.installationScript}
-              bundle install
             '';
           };
         };
