@@ -14,9 +14,7 @@
               mdformat-footnote
               mdformat-frontmatter
               mdformat-gfm
-              mdformat-gfm-alerts
               mdformat-tables
-              mdformat-toc
             ]
           );
           settings = {
