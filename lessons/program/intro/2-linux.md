@@ -10,8 +10,7 @@ title-short: 環境を整えよう その2 Linux編
 
 前回はどのようなツール・アカウントが必要なのかを説明しました。\
 今回はLinux環境におけるインストール方法です。窓共に比べて遥かに楽です。やったね！\
-ちなみにLinux環境と言いつつ筆者の使ったことのあるDebian系・Arch
-Linux・NixOSしか書いてないのは許して♡
+ちなみにLinux環境と言いつつ筆者の使ったことのあるDebian系・Arch Linux・NixOSしか書いてないのは許して♡
 
 ## インストール方法
 
@@ -88,7 +87,7 @@ NixOS (flake.nix + flake-utils)：
         pkgs = import nixpkgs { inherit system; };
       in
       {
-        devShells.default = pkgs.mkShell {
+        devShells.${system}.default = pkgs.mkShell {
           packages = with pkgs; [
             cmake
             ninja
