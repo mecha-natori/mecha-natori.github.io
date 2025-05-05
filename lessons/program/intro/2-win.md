@@ -3,13 +3,13 @@ author: Sora Tonami
 date: 2025/04/23
 description: ロボット制御のための環境を整えよう！
 layout: default
-modified: 2025/04/23
-title: 環境を整えよう \| ロボット制御入門 \| 制御講習
-title-short: 環境を整えよう
+modified: 2025/05/05
+title: 環境を整えよう その2 Windows編 \| ロボット制御入門 \| 制御講習
+title-short: 環境を整えよう その2 Windows編
 ---
 
 前回はどのようなツール・アカウントが必要なのかを説明しました。\
-今回はLinux環境におけるインストール方法です。Linuxに比べるとちょっと煩雑だけど頑張って♡
+今回はWindows環境におけるインストール方法です。Linuxに比べるとちょっと煩雑だけど頑張って♡
 
 ## インストール方法
 
@@ -47,7 +47,7 @@ JetBrains Toolboxを開いて画面の通りにCLionをインスコして下さ�
 
 ### STM32CubeMX
 
-\[STM32CubeMX\]から落として展開します。\
+[STM32CubeMX]から落として展開します。\
 中に入ってる`SetupSTM32CubeMX-***.***.***-Win.exe`みたいな名前のヤツを実行して画面の指示に従って下さい。
 
 ## 次回予告
