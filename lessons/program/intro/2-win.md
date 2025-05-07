@@ -3,7 +3,7 @@ author: Sora Tonami
 date: 2025/04/23
 description: ロボット制御のための環境を整えよう！
 layout: default
-modified: 2025/05/05
+modified: 2025/05/07
 title: 環境を整えよう その2 Windows編 \| ロボット制御入門 \| 制御講習
 title-short: 環境を整えよう その2 Windows編
 ---
