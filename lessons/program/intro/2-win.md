@@ -18,17 +18,17 @@ title-short: 環境を整えよう その2 Windows編
 [Arm GNU Toolchain Downloads]の`arm-gnu-toolchain-***.***.rel***-mingw-w64-x86_64-arm-none-eabi.exe`みたいな名前のヤツを落として画面の指示に従って下さい。\
 執筆時点では`arm-gnu-toolchain-14.2.rel1-mingw-w64-x86_64-arm-none-eabi.exe`らしいっす。
 
+### CMake
+
+[Download CMake]の`cmake-***.***.***-windows-x86_64.msi`みたいな名前のヤツを落として画面の指示に従って下さい。\
+執筆時点では`cmake-4.0.1-windows-x86_64.msi`らしいっす。
+
 ### Ninja Build
 
 [ninja-build/ninja]の`ninja-win.zip`を落として展開して下さい。\
 `ninja.exe`が出てくるハズなので`C:\`直下にでもテキトーにディレクトリ作ってぶち込んどいて下さい。
 
 あとは`sysdm.cpl`から環境変数`PATH`に`ninja.exe`をぶち込んだディレクトリを追加して完了です。
-
-### CMake
-
-[Download CMake]の`cmake-***.***.***-windows-x86_64.msi`みたいな名前のヤツを落として画面の指示に従って下さい。\
-執筆時点では`cmake-4.0.1-windows-x86_64.msi`らしいっす。
 
 ### OpenOCD
 
@@ -37,6 +37,11 @@ title-short: 環境を整えよう その2 Windows編
 
 ...展開したらその中の`bin`を`sysdm.cpl`から環境変数`PATH`に追加して完了です。
 
+### STM32CubeMX
+
+[STM32CubeMX]から落として展開します。\
+中に入ってる`SetupSTM32CubeMX-***.***.***-Win.exe`みたいな名前のヤツを実行して画面の指示に従って下さい。
+
 ### JetBrains Toolbox
 
 [JetBrains Toolbox App]で「ダウンロード」を押して実行して画面の指示に従って下さい。
@@ -44,11 +49,6 @@ title-short: 環境を整えよう その2 Windows編
 ### JetBrains CLion
 
 JetBrains Toolboxを開いて画面の通りにCLionをインスコして下さい。
-
-### STM32CubeMX
-
-[STM32CubeMX]から落として展開します。\
-中に入ってる`SetupSTM32CubeMX-***.***.***-Win.exe`みたいな名前のヤツを実行して画面の指示に従って下さい。
 
 ## 次回予告
 
