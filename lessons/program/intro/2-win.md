@@ -25,7 +25,7 @@ title-short: 環境を整えよう その2 Windows編
 
 ### Ninja Build
 
-[ninja-build/ninja]の`ninja-win.zip`を落として展開して下さい。\
+[ninja-build/ninja]の`ninja-win.zip`を落として**展開して下さい**。\
 `ninja.exe`が出てくるハズなので`C:\`直下にでもテキトーにディレクトリ作ってぶち込んどいて下さい。
 
 あとは「設定」→「システム」→「バージョン情報」→「システムの詳細設定」→「環境変数」から環境変数`Path`に`ninja.exe`をぶち込んだディレクトリを追加して完了です。
