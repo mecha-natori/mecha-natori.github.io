@@ -20,10 +20,17 @@ title-short: 環境を整えよう その2 Windows編
 [Arm GNU Toolchain Downloads]の`arm-gnu-toolchain-***.***.rel***-mingw-w64-x86_64-arm-none-eabi.exe`みたいな名前のヤツを落として画面の指示に従って下さい。\
 執筆時点では`arm-gnu-toolchain-14.2.rel1-mingw-w64-x86_64-arm-none-eabi.exe`らしいっす。
 
+あとは「設定」→「システム」→「バージョン情報」→「システムの詳細設定」→「環境変数」から環境変数`Path`にインストール先\*\*配下の`bin`を(ここ重要)\*\*追加して完了です。\
+インストール先はデフォルトで`C:\Program Files (x86)\Arm GNU Toolchain arm-none-eabi\***.*** rel***`みたいな名前のトコです。\
+執筆時点では`C:\Program Files (x86)\Arm GNU Toolchain arm-none-eabi\14.2 rel1`らしいっす。
+
 ### CMake
 
-[Download CMake]の`cmake-***.***.***-windows-x86_64.msi`みたいな名前のヤツを落として画面の指示に従って下さい。\
-執筆時点では`cmake-4.0.1-windows-x86_64.msi`らしいっす。
+~~Download
+CMakeの`cmake-***.***.***-windows-x86_64.msi`みたいな名前のヤツを落として画面の指示に従って下さい。~~\
+~~執筆時点では`cmake-4.0.1-windows-x86_64.msi`らしいっす。~~
+
+CLionに付いてくるみたいです。なのでインスコはしなくておｋ。
 
 ### Ninja Build
 
@@ -60,7 +67,6 @@ JetBrains Toolboxを開いて画面の通りにCLionをインスコして下さ�
 [次へ](3)
 
 [arm gnu toolchain downloads]: https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads
-[download cmake]: https://cmake.org/download/
 [jetbrains toolbox app]: https://www.jetbrains.com/ja-jp/toolbox-app/
 [ninja-build/ninja]: https://github.com/ninja-build/ninja/releases/latest
 [openocd-org/openocd]: https://github.com/openocd-org/openocd/releases/latest
