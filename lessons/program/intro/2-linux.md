@@ -3,7 +3,7 @@ author: Sora Tonami
 date: 2025/04/23
 description: ロボット制御のための環境を整えよう！
 layout: default
-modified: 2025/05/05
+modified: 2025/05/28
 title: 環境を整えよう その2 Linux編 \| ロボット制御入門 \| 制御講習
 title-short: 環境を整えよう その2 Linux編
 ---
@@ -152,7 +152,9 @@ JetBrains Toolboxを開いて画面の通りにCLionをインスコして下さ�
 今回で必要なツールは揃いました。\
 次回はいよいよ実際にプロジェクトを作っていきます。
 
-[次へ](3)
+[前へ](1)・[次へ](3)
+
+[ロボット制御入門Topへ](..#%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E5%88%B6%E5%BE%A1%E5%85%A5%E9%96%80)
 
 [jetbrains toolbox app]: https://www.jetbrains.com/ja-jp/toolbox-app/
 [stm32cubemx]: https://www.st.com/ja/development-tools/stm32cubemx.html
