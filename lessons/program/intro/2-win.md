@@ -70,3 +70,4 @@ JetBrains Toolboxを開いて画面の通りにCLionをインスコして下さ�
 [jetbrains toolbox app]: https://www.jetbrains.com/ja-jp/toolbox-app/
 [ninja-build/ninja]: https://github.com/ninja-build/ninja/releases/latest
 [openocd-org/openocd]: https://github.com/openocd-org/openocd/releases/latest
+[stm32cubemx]: https://www.st.com/ja/development-tools/stm32cubemx.html
