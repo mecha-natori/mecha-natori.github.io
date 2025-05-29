@@ -30,6 +30,8 @@ title-short: 制御講習
 
 - [番外編:センサーを読み取ってみよう](intro/ex-sensor) (WIP)
 
+- [コラム:ヘッダーとソースの違い](intro/column-difference-headers-and-sources)
+
 ## 用語集
 
 用語集です。英語も置いておくので検索に活用してね。
