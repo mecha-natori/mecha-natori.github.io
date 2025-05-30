@@ -29,10 +29,17 @@
         { config, pkgs, ... }:
         {
           devShells.default = pkgs.mkShell {
-            packages = with pkgs; [
-              bundler
-              ruby
-            ];
+            packages =
+              with pkgs;
+              (
+                [
+                  ruby
+                ]
+                ++ (with rubyPackages; [
+                  gemoji
+                  github-pages
+                ])
+              );
             shellHook = ''
               ${config.pre-commit.installationScript}
             '';
