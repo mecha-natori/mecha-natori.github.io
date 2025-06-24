@@ -42,6 +42,5 @@ title-short: 制御講習
 
 ## おまけ
 
-- [うまくggれない！そんな時は](ggrks)
 - [Tips](tips)
 - [librobo APIドキュメント](https://mecha-natori.github.io/librobo)
