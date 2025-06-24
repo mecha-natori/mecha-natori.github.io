@@ -7,7 +7,7 @@ layout: default
 modified: 2024/12/15
 tags:
   - Tips
-title: うまくggれない！そんな時は \| 制御講習
+title: うまくggれない！そんな時は \| PC基礎知識講習
 title-short: うまくggれない！そんな時は
 ---
 
