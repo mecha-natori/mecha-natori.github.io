@@ -1,3 +1,10 @@
+exclude:
+  - LICENSE.md
+  - README.md
+  - flake.lock
+  - flake.nix
+  - git-hooks.nix
+  - treefmt.nix
 highlighter: "rouge"
 host: "0.0.0.0"
 kramdown:
