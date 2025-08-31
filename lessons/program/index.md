@@ -30,10 +30,11 @@ title-short: 制御講習
 
 - [番外編:センサーを読み取ってみよう](intro/ex-sensor) (WIP)
 
-<!-- -->
+<!-- リスト分離用 -->
 
 - [コラム:ヘッダーとソースの違い](intro/column-difference-headers-and-sources)
 - [コラム:C++で開発するには](intro/column-cpp)
+- [コラム:PWMとは](intro/column-pwm)
 
 ## 用語集
 
