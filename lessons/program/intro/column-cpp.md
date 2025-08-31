@@ -1,7 +1,7 @@
 ---
 author: Sora Tonami
 date: 2025/09/01
-description: ヘッダーとソースの違いについて知ろう！
+description: C++で書くための下準備について、知っておこう。
 layout: default
 modified: 2025/09/01
 title: コラム:C++で開発するには \| ロボット制御入門 \| 制御講習
