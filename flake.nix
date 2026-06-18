@@ -5,7 +5,10 @@
       url = "github:hercules-ci/flake-parts";
     };
     git-hooks = {
-      inputs.nixpkgs.follows = "nixpkgs";
+      inputs = {
+        flake-compat.follows = "";
+        nixpkgs.follows = "nixpkgs";
+      };
       url = "github:cachix/git-hooks.nix";
     };
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -18,30 +21,45 @@
       url = "github:numtide/treefmt-nix";
     };
   };
+  nixConfig = {
+    experimental-features = [
+      "flakes"
+      "nix-command"
+      "pipe-operators"
+    ];
+    substituters = [
+      "https://cache.nixos.org"
+      "https://nix-community.cachix.org"
+    ];
+    trusted-public-keys = [
+      "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
+      "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
+    ];
+  };
   outputs =
     inputs@{ flake-parts, systems, ... }:
     flake-parts.lib.mkFlake { inherit inputs; } {
       imports = [
-        ./treefmt.nix
-        ./git-hooks.nix
+        ./nix/treefmt.nix
+        ./nix/git-hooks.nix
       ];
       perSystem =
-        { config, pkgs, ... }:
+        {
+          config,
+          lib,
+          pkgs,
+          ...
+        }:
         {
           devShells.default = pkgs.mkShell {
             packages =
-              with pkgs;
-              (
-                [
-                  ruby
-                ]
-                ++ (with rubyPackages; [
-                  gemoji
-                  github-pages
-                ])
-              );
+              config.pre-commit.settings.enabledPackages
+              ++ (config.treefmt.build.programs |> lib.attrValues)
+              ++ (with pkgs; [
+                mdbook
+              ]);
             shellHook = ''
-              ${config.pre-commit.installationScript}
+              ${config.pre-commit.shellHook}
             '';
           };
         };

@@ -1,0 +1,40 @@
+jobs:
+  build:
+    runs-on: "ubuntu-24.04"
+    steps:
+      - name: "Checkout repository"
+        uses: "actions/checkout@v6"
+      - name: "Setup mdBook"
+        run: "cargo install mdbook --no-default-features"
+      - name: "Build"
+        run: "mdbook build"
+      - name: "Upload"
+        uses: "actions/upload-pages-artifact@v5"
+        with:
+          path: "./book"
+  deploy:
+    environment:
+      name: "github-pages"
+      url: "${{ steps.deployment.outputs.page_url }}"
+    if: >-
+      github.event_name != 'pull_request' ||
+      github.event.pull_request.merged == true
+    needs: "build"
+    runs-on: "ubuntu-24.04"
+    steps:
+      - id: "deployment"
+        name: "Deploy"
+        uses: "actions/deploy-pages@v5"
+name: "GitHub Pages"
+on:
+  pull_request:
+    branches:
+      - "main"
+  push:
+    branches:
+      - "main"
+  workflow_dispatch:
+permissions:
+  contents: "read"
+  id-token: "write"
+  pages: "write"

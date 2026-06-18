@@ -1,9 +1,4 @@
-**/.direnv/
-.bundle/
-.jekyll-cache/
-.jekyll-metadata
+.direnv/
 .pre-commit-config.yaml
-.sass-cache/
-_site/
+book/
 result*
-vendor/
